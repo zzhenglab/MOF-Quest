@@ -97,4 +97,4 @@ MOF Quest supports ongoing research on:
 This application was initially developed using Google AI Studio and Gemini models. We acknowledge Google AI Studio for rapid prototyping support during development.
 
 
-© 2025 Zheng Research Group
+© 2026 Zheng Research Group
