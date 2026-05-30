@@ -1,0 +1,5 @@
+{
+  "name": "MOF Reaction Predictor",
+  "description": "A gamified crowd-sourcing platform for synthetic chemists to predict Metal-Organic Framework reaction outcomes.",
+  "requestFramePermissions": []
+}
