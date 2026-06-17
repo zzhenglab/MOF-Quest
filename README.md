@@ -6,6 +6,11 @@ MOF Quest is an interactive research platform designed to quantify chemical intu
 
 The platform was developed as part of the MOF Reactome project, which uses literature mining, negative-data reasoning, and machine learning to study MOF synthesizability and reaction outcome prediction.
 
+<p align="center">
+  <img src="data/mof_quest_demo.png" alt="TOC Figure" width="750">
+</p>
+
+
 ## Background
 
 Synthetic chemistry advances through trial-and-error experimentation, yet failed experiments are rarely reported in the scientific literature. This creates a major challenge for data-driven materials discovery.
