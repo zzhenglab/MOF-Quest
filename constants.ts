@@ -40,7 +40,7 @@ const successData: ReactionConditions[] = [
   {
     "doi": "10.1021/jacs.5c08726",
     "metal_precursor": "Zn(NO3)2·6H2O",
-    "organic_linker": "2-nitroterephthalic acid",
+    "organic_linker": "2-nitroterephthalic acid and 4,4′-azobis(pyridine)",
     "modulator": null,
     "solvent": "dimethylformamide",
     "metal_concentration_mM": 20.0,
