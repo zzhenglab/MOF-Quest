@@ -6,7 +6,7 @@ export const demoQuestion: QuizQuestion = {
   metal_precursor: "Cu(NO3)2·3H2O",
   organic_linker: "1,3,5-benzenetricarboxylic acid (BTC)",
   modulator: "Acetic acid",
-  solvent: "Water/Ethanol (50:50)",
+  solvent: "water and ethanol (50:50)",
   metal_concentration_mM: 50.0,
   M_L_ratio: 1.5,
   temperature_C: 85.0,
@@ -36,11 +36,15 @@ export const getLinkerImageUrl = (name: string): string => {
 };
 
 const successData: ReactionConditions[] = [
-  // Easy
+  // =========================
+  // P: EASY
+  // =========================
+
+  // Q1 | Reaction ID: rxn_540add03
   {
     "doi": "10.1021/jacs.5c08726",
     "metal_precursor": "Zn(NO3)2·6H2O",
-    "organic_linker": "2-nitroterephthalic acid and 4,4′-azobis(pyridine)",
+    "organic_linker": "2-nitroterephthalic acid",
     "modulator": null,
     "solvent": "dimethylformamide",
     "metal_concentration_mM": 20.0,
@@ -48,6 +52,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 25.0,
     "time_h": 360.0
   },
+
+  // Q2 | Reaction ID: rxn_50d39625
   {
     "doi": "10.1021/ja500330a",
     "metal_precursor": "ZrCl4",
@@ -59,6 +65,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 130.0,
     "time_h": 72.0
   },
+
+  // Q3 | Reaction ID: rxn_6659b2fe
   {
     "doi": "10.1038/s41560-018-0261-6",
     "metal_precursor": "FeCl3·6H2O",
@@ -70,6 +78,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 130.0,
     "time_h": 6.0
   },
+
+  // Q4 | Reaction ID: rxn_6451802d
   {
     "doi": "10.1039/c2ce06176g",
     "metal_precursor": "Al(NO3)3·9H2O",
@@ -81,7 +91,12 @@ const successData: ReactionConditions[] = [
     "temperature_C": 150.0,
     "time_h": 72.0
   },
-  // Medium
+
+  // =========================
+  // P: MEDIUM
+  // =========================
+
+  // Q5 | Reaction ID: rxn_48e522db
   {
     "doi": "10.1038/s41560-018-0261-6",
     "metal_precursor": "ZrCl4",
@@ -93,6 +108,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 150.0,
     "time_h": 144.0
   },
+
+  // Q6 | Reaction ID: rxn_b6b99f4
   {
     "doi": "10.1038/s41560-018-0261-6",
     "metal_precursor": "ZrOCl2·8H2O",
@@ -104,6 +121,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 120.0,
     "time_h": 24.0
   },
+
+  // Q7 | Reaction ID: rxn_5335b01f
   {
     "doi": "10.1016/j.ica.2011.12.017",
     "metal_precursor": "Yb(NO3)3·6H2O",
@@ -115,6 +134,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 160.0,
     "time_h": 72.0
   },
+
+  // Q8 | Reaction ID: rxn_58c417f4
   {
     "doi": "10.1021/acs.langmuir.2c00165",
     "metal_precursor": "EuCl3",
@@ -126,7 +147,12 @@ const successData: ReactionConditions[] = [
     "temperature_C": 100.0,
     "time_h": 20.0
   },
-  // Hard
+
+  // =========================
+  // P: HARD
+  // =========================
+
+  // Q9 | Reaction ID: rxn_db77c1a
   {
     "doi": "10.1021/acs.cgd.7b00274",
     "metal_precursor": "Mn(ClO4)2",
@@ -138,6 +164,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 115.0,
     "time_h": 48.0
   },
+
+  // Q10 | Reaction ID: rxn_6802459b
   {
     "doi": "10.1021/jacs.7b09983",
     "metal_precursor": "Cd(CH3COO)2·2H2O",
@@ -149,6 +177,8 @@ const successData: ReactionConditions[] = [
     "temperature_C": 120.0,
     "time_h": 20.0
   },
+
+  // Q11 | Reaction ID: rxn_b3881e1
   {
     "doi": "10.1021/ja4032049",
     "metal_precursor": "ZrCl4",
@@ -162,8 +192,13 @@ const successData: ReactionConditions[] = [
   }
 ];
 
+
 const failData: ReactionConditions[] = [
-  // Easy
+  // =========================
+  // N: EASY
+  // =========================
+
+  // Q12 | Reaction ID: rxn_5aa127f8
   {
     "doi": "10.1039/c3ce41996g",
     "metal_precursor": "Ce(NO3)3·6H2O",
@@ -174,8 +209,11 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 1.0,
     "temperature_C": 120.0,
     "time_h": 0.5,
-    "article_trial_or_failure_notes": "No precipitate at 30 min (120 °C) while other conditions unchanged."
+    "article_trial_or_failure_notes":
+      "No precipitate at 30 min (120 °C) while other conditions unchanged."
   },
+
+  // Q13 | Reaction ID: rxn_64b265f7
   {
     "doi": "10.1039/c0jm03563g",
     "metal_precursor": "FeCl3·6H2O",
@@ -186,8 +224,11 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 1.0,
     "temperature_C": 100.0,
     "time_h": 24.0,
-    "article_trial_or_failure_notes": "Pure alcohols gave no MIL-88A without base; some ultrasonic runs showed almost no precipitation at low concentration."
+    "article_trial_or_failure_notes":
+      "Pure alcohols gave no MIL-88A without base; some ultrasonic runs showed almost no precipitation at low concentration."
   },
+
+  // Q14 | Reaction ID: rxn_2729a0f3
   {
     "doi": "10.1021/cm3025445",
     "metal_precursor": "AlCl3·6H2O",
@@ -198,8 +239,11 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 2.0,
     "temperature_C": 135.0,
     "time_h": 12.0,
-    "article_trial_or_failure_notes": "HT screening: pure H2O gave linker recrystallization; several conditions produced unknown byproducts; sulfate source occluded in pores for polar linkers."
+    "article_trial_or_failure_notes":
+      "HT screening: pure H2O gave linker recrystallization; several conditions produced unknown byproducts; sulfate source occluded in pores for polar linkers."
   },
+
+  // Q15 | Reaction ID: rxn_1c19902e
   {
     "doi": "10.1002/anie.202421942",
     "metal_precursor": "ZrOCl2·8H2O",
@@ -210,9 +254,15 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 3.0,
     "temperature_C": 50.0,
     "time_h": 24.0,
-    "article_trial_or_failure_notes": "At 25–50 °C without seeds, no MOF product (or slightly turbid) formed; seeds enabled growth. At 75 °C yields became comparable."
+    "article_trial_or_failure_notes":
+      "At 25–50 °C without seeds, no MOF product (or slightly turbid) formed; seeds enabled growth. At 75 °C yields became comparable."
   },
-  // Medium
+
+  // =========================
+  // N: MEDIUM
+  // =========================
+
+  // Q16 | Reaction ID: rxn_4554078e
   {
     "doi": "10.1039/c5dt02625c",
     "metal_precursor": "Cr(NO3)3·9H2O",
@@ -223,8 +273,11 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 1.0,
     "temperature_C": 160.0,
     "time_h": 8.0,
-    "article_trial_or_failure_notes": "5 eq HNO3 gave non-porous powder; 10 eq AcOH gave no product; 160 °C without seeds gave no product; large-scale at 220 °C formed an unknown phase; fumaric/citric acid unsuitable as additives."
+    "article_trial_or_failure_notes":
+      "5 eq HNO3 gave non-porous powder; 10 eq AcOH gave no product; 160 °C without seeds gave no product; large-scale at 220 °C formed an unknown phase; fumaric/citric acid unsuitable as additives."
   },
+
+  // Q17 | Reaction ID: rxn_1d526b97
   {
     "doi": "10.1021/ic201219g",
     "metal_precursor": "Al(ClO4)3·9H2O",
@@ -235,8 +288,11 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 0.91,
     "temperature_C": 170.0,
     "time_h": 12.0,
-    "article_trial_or_failure_notes": "Screened Al salts and solvents; water best for most, DEF required for (OH)2; 2-Br only with Al(NO3)3 and (OH)2 only with Al(ClO4)3 yielded crystalline products."
+    "article_trial_or_failure_notes":
+      "Screened Al salts and solvents; water best for most, DEF required for (OH)2; 2-Br only with Al(NO3)3 and (OH)2 only with Al(ClO4)3 yielded crystalline products."
   },
+
+  // Q18 | Reaction ID: rxn_d877775
   {
     "doi": "10.1039/d2nr01827f",
     "metal_precursor": "In(NO3)3",
@@ -247,8 +303,11 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 2.13,
     "temperature_C": 80.0,
     "time_h": 16.0,
-    "article_trial_or_failure_notes": "Screening showed >120 °C gave byproduct crystals; 80 °C no product; excess H2O (>3.15 mL) formed In(OH)3."
+    "article_trial_or_failure_notes":
+      "Screening showed >120 °C gave byproduct crystals; 80 °C no product; excess H2O (>3.15 mL) formed In(OH)3."
   },
+
+  // Q19 | Reaction ID: rxn_357323cd
   {
     "doi": "10.1002/ejic.201500133",
     "metal_precursor": "ZrO(NO3)2",
@@ -259,9 +318,15 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 1.0,
     "temperature_C": 150.0,
     "time_h": 24.0,
-    "article_trial_or_failure_notes": "Screened Zr salts/solvents/modulators; many conditions gave non-muconate phases or amorphous (e.g., high H2O equivalents)."
+    "article_trial_or_failure_notes":
+      "Screened Zr salts/solvents/modulators; many conditions gave non-muconate phases or amorphous (e.g., high H2O equivalents)."
   },
-  // Hard
+
+  // =========================
+  // N: HARD
+  // =========================
+
+  // Q20 | Reaction ID: rxn_2083c62f
   {
     "doi": "10.1021/acs.cgd.8b01657",
     "metal_precursor": "Ni(CH3COO)2·4H2O",
@@ -272,20 +337,26 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 1.0,
     "temperature_C": 25.0,
     "time_h": 24.0,
-    "article_trial_or_failure_notes": "RT 1:1 Ni/Co and RT 2:1 Ni gave 1D chain, not CPO-27; only RT 2:1 Co formed CPO-27-Co."
+    "article_trial_or_failure_notes":
+      "RT 1:1 Ni/Co and RT 2:1 Ni gave 1D chain, not CPO-27; only RT 2:1 Co formed CPO-27-Co."
   },
+
+  // Q21 | Reaction ID: rxn_4d24ea4c
   {
     "doi": "10.1039/c2ce25677k",
     "metal_precursor": "CdCl2·5/2H2O",
     "organic_linker": "isophthalic acid",
-    "modulator": "no modulator",
+    "modulator": null,
     "solvent": "water",
     "metal_concentration_mM": 33.0,
     "M_L_ratio": 1.0,
     "temperature_C": 170.0,
     "time_h": 24.0,
-    "article_trial_or_failure_notes": "Cd/5-HO-1,3-BDC/bimb at 1:1:1 and other ratios gave no complex; pH adjusted to 4.8 (HNO3) afforded 4."
+    "article_trial_or_failure_notes":
+      "Cd/5-HO-1,3-BDC/bimb at 1:1:1 and other ratios gave no complex; pH adjusted to 4.8 (HNO3) afforded 4."
   },
+
+  // Q22 | Reaction ID: rxn_2bf177c8
   {
     "doi": "10.1021/jacs.2c09756",
     "metal_precursor": "AlCl3",
@@ -296,9 +367,11 @@ const failData: ReactionConditions[] = [
     "M_L_ratio": 4.0,
     "temperature_C": 100.0,
     "time_h": 96.0,
-    "article_trial_or_failure_notes": "Solvothermal 1.5 eq base gave mixed-phase/hysteretic products at some ratios; PT26 at 1.5 eq was mixed-phase; 3 eq base (solvothermal) led to defective MOFs with nonideal isotherms."
+    "article_trial_or_failure_notes":
+      "Solvothermal 1.5 eq base gave mixed-phase/hysteretic products at some ratios; PT26 at 1.5 eq was mixed-phase; 3 eq base (solvothermal) led to defective MOFs with nonideal isotherms."
   }
 ];
+
 
 // Helper to generate a stable ID based on reaction content
 const getStableId = (r: ReactionConditions): string => {
