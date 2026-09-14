@@ -2,6 +2,7 @@ import React from 'react';
 import { Gift, Award, CheckCircle2, Download, BookOpen, Users } from 'lucide-react';
 import { QuizQuestion } from '../types';
 
+
 interface ResultsViewProps {
   score: number;
   totalQuestions: number;
