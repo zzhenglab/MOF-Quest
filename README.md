@@ -74,9 +74,7 @@ This benchmark measures individual predictions from compact written reaction des
 2. Complete the demonstration question to become familiar with the confidence slider.
 3. Review each reaction and confirm a prediction. The interface provides correctness feedback before advancing.
 4. Complete the 22-question panel and view the final score.
-5. Download the detailed CSV results and consult the source DOI links.
-
-The application also attempts to download a JSON session backup after completion.
+5. Optional: download the detailed CSV results and consult the source DOI links.
 
 ## Features
 
@@ -210,21 +208,25 @@ The implementation also attempts to save and submit partial responses after ten 
 | `vite.config.ts` | Development server and build configuration |
 | `package.json` | Dependencies and npm commands |
 
-## Updating the benchmark
+## Adapting MOF Quest for other quizzes
 
-The quiz loads its questions from `constants.ts`. **Editing `metadata.json` alone does not change the questions shown in the application.** 
+The MOF Quest interface can be adapted for other reaction-prediction tasks, materials-synthesis challenges, or confidence-based quizzes. Its randomized question presentation, confidence slider, scoring, and response exports provide a starting point for a new application.
 
-To revise the question panel:
+To adapt the website:
 
-1. Update `successData` and `failData` in `constants.ts`.
-2. Preserve the reaction fields, source DOI, and supporting evidence for each label.
-3. Update `metadata.json` to keep its question representation consistent.
-4. Add or revise structure-image mappings when needed.
-5. Check question counts and any fixed text that refers to a 22-question benchmark.
+1. **Replace the question dataset.** Update `successData` and `failData` in `constants.ts` with your own questions and reference outcomes. The application loads questions from this file; editing `metadata.json` alone does not change the quiz.
 
-Runtime reaction IDs are generated from the metal precursor, organic linker, temperature, and reaction time. Changes to other fields do not change the ID, and this hash does not guarantee uniqueness. Verify IDs when revising the dataset and retain a versioned mapping between reaction records and participant responses.
+2. **Customize the question fields.** Modify the interfaces in `types.ts` and the display in `components/ReactionCard.tsx` to present the information relevant to your task. Replace the chemical structure previews with suitable images or remove them.
 
-For reproducible comparisons, record the repository commit and exact question panel. Align responses using the recorded reaction IDs and conditions, since presentation order is randomized. Model evaluations should use only the intended reaction-condition inputs, with reference labels, failure notes, and answer-bearing metadata excluded.
+3. **Adjust the response options and scoring.** Edit the prediction controls in `components/ReactionCard.tsx` and the scoring logic in `App.tsx`. The current implementation supports binary outcomes with two confidence levels. Tasks with additional answer categories require corresponding changes to scoring, transcripts, and exports.
+
+4. **Update the website content.** Revise the title, introduction, demonstration question, participant information, and results messages. Update `metadata.json` and any fixed references to MOF chemistry or a 22-question benchmark.
+
+5. **Configure data collection.** Replace `GOOGLE_SCRIPT_URL` in `App.tsx` with your own backend endpoint and adapt the submission fields as needed. Update the participant disclosures to describe your study and its data-collection practices.
+
+6. **Assign unique question identifiers.** Replace the chemistry-specific ID generator in `constants.ts` with identifiers appropriate for your dataset. Keep these identifiers stable across sessions so responses can be aligned despite randomized question order.
+
+7. **Verify the complete participant flow.** Check the demonstration, question display, response options, scoring, final results, downloads, and backend submissions before distributing the quiz.
 
 
 ## Related research and citation
