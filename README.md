@@ -7,7 +7,7 @@ MOF Quest is an interactive research platform for studying chemical intuition in
 Developed by the **Zheng Research Group at Washington University in St. Louis**, MOF Quest supports the broader [MOFinder project](https://github.com/zzhenglab/MOFinder) on literature mining, negative-data reasoning, and predictive materials synthesis.
 
 <p align="center">
-  <img src="components/mof_quest_demo.png" alt="MOF Quest interface showing reaction conditions and the prediction confidence slider" width="600">
+  <img src="components/mof_quest_demo.png" alt="MOF Quest interface showing reaction conditions and the prediction confidence slider" width="400">
 </p>
 
 [MOFinder](https://github.com/zzhenglab/MOFinder) · [Research Group](https://zhenglab.wustl.edu/) · [Report an Issue](https://github.com/zzhenglab/MOF-Quest/issues)
