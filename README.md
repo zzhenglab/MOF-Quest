@@ -241,8 +241,6 @@ Bug reports, documentation improvements, and corrections to reaction records are
 **Zheng Research Group**  
 Department of Chemistry, Washington University in St. Louis  
 [zhenglab.wustl.edu](https://zhenglab.wustl.edu/)  
-Contact: [Zhiling Zheng](mailto:z.z@wustl.edu)
-
 ## Acknowledgments
 
 We thank the chemists who contributed their time and expertise to the MOF Quest study. Initial application development was supported by Google AI Studio and Gemini. Chemical structure previews use resources provided by NCI/Cactus and PubChem.
