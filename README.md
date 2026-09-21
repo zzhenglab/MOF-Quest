@@ -2,9 +2,7 @@
 
 **A human benchmark for predicting metal-organic framework synthesis outcomes.**
 
-MOF Quest is an interactive research platform for studying chemical intuition in metal-organic framework (MOF) synthesis. Participants review literature-derived reaction conditions, predict whether the specified synthesis will succeed, and indicate their confidence. The platform records these judgments for comparison with experimental reference outcomes and independently evaluated machine-learning models.
-
-Developed by the **Zheng Research Group at Washington University in St. Louis**, MOF Quest supports the broader [MOFinder project](https://github.com/zzhenglab/MOFinder) on literature mining, negative-data reasoning, and predictive materials synthesis.
+MOF Quest is an interactive research platform for studying chemical intuition in metal-organic framework (MOF) synthesis. Participants review literature-derived reaction conditions, predict whether the specified synthesis will succeed, and indicate their confidence. The platform records these judgments for comparison with experimental reference outcomes and independently evaluated machine-learning models. MOF Quest supports the broader [MOFinder project](https://github.com/zzhenglab/MOFinder) on literature mining, negative-data reasoning, and predictive materials synthesis.
 
 <p align="center">
   <img src="components/mof_quest_demo.png" alt="MOF Quest interface showing reaction conditions and the prediction confidence slider" width="400">
