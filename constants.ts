@@ -145,7 +145,7 @@ const successData: ReactionConditions[] = [
   {
     "doi": "10.1039/c2ce06176g",
     "metal_precursor": "Co(CH3COO)2·4H2O",
-    "organic_linker": "5-(2-carboxybenzyloxy) isophthalic acid",
+    "organic_linker": "5-(2-carboxybenzyloxy) isophthalic acid and 1,10-(1,3-propanediyl)bis(imidazole)",
     "modulator": "sodium hydroxide",
     "solvent": "water",
     "metal_concentration_mM": 12,
@@ -311,7 +311,7 @@ const failData: ReactionConditions[] = [
   // Q21 | N | rxn_2729a0f3 | Stratum: hard
   {
     "doi": "10.1021/cm3025445",
-    "metal_precursor": "AlCl3",
+    "metal_precursor": "AlCl3·6H2O",
     "organic_linker": "isophthalic acid",
     "modulator": null,
     "solvent": "dimethylformamide and water",
