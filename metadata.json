@@ -1,6 +1,0 @@
-{
-  "name": "MOF Quest",
-  "description": "A gamified crowdsourcing platform for synthetic chemists to predict metal-organic framework reaction outcomes.",
-  "requestFramePermissions": [],
-  "question_source": "https://github.com/zzhenglab/MOFinder/blob/main/benchmarks/mof_quest/22_questions.json"
-}
